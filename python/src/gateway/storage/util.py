@@ -22,6 +22,7 @@ def upload(f, fs, channel, access):
     }
     
     try:
+        print("here")
         channel.basic_publish(
             exchange="",
             routing_key="video",

@@ -5,7 +5,7 @@ metadata:
   labels:
     app: converter
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: converter
@@ -25,4 +25,4 @@ spec:
             - configMapRef:
                 name: converter-configmap
             - secretRef:
-                name: converter-secret 
+                name: converter-secret
